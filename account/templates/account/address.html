@@ -1,0 +1,7 @@
+{% for add in address %}
+{{ add.user.username }}
+<p><a href="{% url 'particular_address' add.id %}">{{ add.street }}</a></p>
+<p>{{ add.city }}</p>
+<p>{{ add.country }}</p>
+
+{% endfor %}
